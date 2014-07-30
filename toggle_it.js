@@ -41,6 +41,7 @@
 				$('.read_less').click(function() {
 					$(this).parents(settings.content_div+ ' .toggle_it_full').hide(settings.animation);
 					$(this).parents(settings.content_div).find('.toggle_it_start').show(settings.animation);
+					return false;
 				});
 			}
 			if( settings.toggle_it_type == 'hidden' ) {
