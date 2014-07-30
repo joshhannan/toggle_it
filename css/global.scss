@@ -1,0 +1,75 @@
+/**===========================================================================
+	VARIABLES
+===========================================================================**/
+$arial: "Arial", sans-serif;
+
+/* Blues */
+.blue-0 { color: #2F4073 }
+.blue-1 { color: #7986AC }
+.blue-2 { color: #50608F }
+.blue-3 { color: #162656 }
+.blue-4 { color: #061339 }
+
+/*  Yellows */
+.yellow-0 { color: #AA9839 }
+.yellow-1 { color: #FFF2AA }
+.yellow-2 { color: #D4C46A }
+.yellow-3 { color: #806F15 }
+.yellow-4 { color: #554800 }
+
+/* Tan/orange */
+.orange-0 { color: #AA6F39 }
+.orange-1 { color: #FFD3AA }
+.orange-2 { color: #D49D6A }
+.orange-3 { color: #804815 }
+.orange-4 { color: #552900 }
+
+/**===========================================================================
+	STANDARD CLASSES - NOT NEEDED
+===========================================================================**/
+
+@import "standard";
+
+/**===========================================================================
+	GENERIC SETUP
+===========================================================================**/
+h3 {
+	width: 100%;
+	float: left;
+}
+pre {
+	width: 100%;
+	float: left;
+	background: #FFF2AA;
+	padding: 5% 0;
+	color: #162656;
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 6px #554800;;
+}
+.overlay_it_container {
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url('../images/opacity_bg.png') repeat;
+	.overlay_it_box {
+		background: #FFFFFF;
+		position: absolute;
+		padding: 15px;
+		top: 25%;
+		width: 50%;
+		left: 50%;
+		border-radius: 4px;
+		margin: 0 0 0 -25%;
+		min-width: 300px;
+		min-height: 150px;
+		.close {
+			position: absolute;
+			top: 0;
+			right: 0;
+			border: 1px solid #000000;
+		}
+	}
+}
