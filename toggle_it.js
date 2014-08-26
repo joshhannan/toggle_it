@@ -33,7 +33,6 @@
 				// EXECUTION
 				$(settings.content_div+' .toggle_it_full').hide();
 				$('.read_more').click(function() {
-					console.log(settings.animation+' something?');
 					$(this).parents(settings.content_div+' .toggle_it_start').hide(settings.animation);
 					$(this).parents(settings.content_div).find('.toggle_it_full').show(settings.animation);
 					return false;
